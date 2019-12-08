@@ -38,7 +38,7 @@ hands in the following format:
 7H 7D 7C 7S KD 2D 3H 5C 9S 2H :LeftHand Wins.
 2H 4S 4C 2D KH 2C 3H 4S 8C KD : Draw.
 
-or Download the exe from   https://github.com/swapgithub80/PokerCodeExercise/blob/master/PokerGameConsoleApp/Release/PokerGameConsoleApp.exe
+or Download the exe from   https://github.com/swapgithub80/PokerCodeExercise/blob/master/PokerGameConsoleApp/bin/Release/PokerGameConsoleApp.exe
 
 Tools Used :
 
