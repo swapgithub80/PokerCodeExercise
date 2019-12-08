@@ -11,7 +11,7 @@ namespace PokerGameConsoleApp
     public class PokerHands
     {
         public List<Card> Cards { get; set; }
-        public HandType handcategory;
+        private readonly HandType handcategory;
 
         /// <summary>
         /// 1. initialize the Card list  
@@ -125,9 +125,9 @@ namespace PokerGameConsoleApp
         }
 
         /// <summary>
-        /// Selects the suit and gets the count of distinct suit. 
-        /// If all the 5 cards are of the same suit, 
-        /// then the dealt hand will be recognized as a flush.
+        /// selects only the suits of our cards, takes only the 
+        /// distinct values, and counts them. If there is only one
+        /// suit, it must be a flush.
         /// </summary>
         /// <returns>true if  flush</returns>
         public bool IsFlush()
@@ -138,21 +138,21 @@ namespace PokerGameConsoleApp
         }
 
         /// <summary>
-        ///selects only the values of the cards, takes only 
-           /// distinct values, and counts them. If there are only 
-            /// 4 values, two of them must be the same. 
+        /// selects only the values of the cards, takes only 
+        /// distinct values, and counts them. If there are only 
+        /// 4 values, two of them must be the same. 
         /// </summary>
         /// <returns>true if has pair</returns>
         public bool HasPair()
         {
-
             return this.Cards.Select(x => x.Rank).Distinct().Count() == 4;
+           
         }
 
         /// <summary>
-        /// Selects the rank and puts them in order regardless of suit. 
-        /// If the disitnct rank count is 3  
-        /// then the dealt hand will be recognized as a pair.
+        ///Select only the values of the cards, takes only
+        /// distinct values, and counts them. If there are only
+        /// 3 values, there must be two pairs.
         /// </summary>
         /// <returns>true if 2 pair</returns>
         public bool TwoPair()
@@ -161,6 +161,12 @@ namespace PokerGameConsoleApp
             return this.Cards.Select(x => x.Rank).Distinct().Count() == 3;
         }
 
+        /// <summary>
+        ///Selects the rank and puts them in order regardless 
+        /// of suit. If the dealt hand are in order consecutively
+        /// then it will be recognized as a straight.
+        /// </summary>
+        /// <returns></returns>
         public bool Straight()
         {
 
@@ -170,8 +176,9 @@ namespace PokerGameConsoleApp
         }
 
         /// <summary>
-        /// If the count of the cards is 3  
-        /// then the dealt hand will be recognized as a three of a kind.
+        ///Grouping the same ranked cards together from the dealt hand
+        ///If the first of the ranked cards has three in it, then it
+        /// will be returned as being a three of a kind. 
         /// </summary>
         /// <returns>true if 3 of a kind</returns>
 
@@ -183,8 +190,9 @@ namespace PokerGameConsoleApp
         }
 
         /// <summary>
-        /// If the count of the cards is 4 reardless of suit  
-        /// then the dealt hand will be recognized as a four of a kind.
+        ///Select only the values of the cards, takes only
+        /// distinct values, and counts them. If there are only
+        /// 2 values, there must be 4 of the same rank.
         /// </summary>
         /// <returns>true if four of a kind</returns>
 
@@ -196,12 +204,11 @@ namespace PokerGameConsoleApp
         }
 
         /// <summary>
-        /// If within the cards dealt there is three 
+        ///If within the cards dealt there is three 
         /// of a kind and a pair, then it will be recognized 
         /// as a full house. 
         /// </summary>
         /// <returns>true if fullhouse.</returns>
-
         public bool FullHouse()
         {
 
@@ -214,6 +221,7 @@ namespace PokerGameConsoleApp
                 return false;
             }
         }
+
         /// <summary>
         /// //If both IsFlush and Straight are both true, then 
         /// the dealt hand will be recognized as a straight flush.
@@ -233,8 +241,10 @@ namespace PokerGameConsoleApp
             }
 
         }
+
         /// <summary>
-        ///  Checks for the handtype of the cardlist of each player
+        ///Creating a function to check if 
+        /// the hand meets certain requirements. 
         /// </summary>
         /// <returns> Handtype</returns>
         public HandType GetRank()
