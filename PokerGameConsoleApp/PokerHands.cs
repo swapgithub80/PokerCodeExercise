@@ -138,14 +138,15 @@ namespace PokerGameConsoleApp
         }
 
         /// <summary>
-        /// Groups by rank and if count of any suit is 2  
-        /// then the dealt hand will be recognized as a pair.
+        ///selects only the values of the cards, takes only 
+           /// distinct values, and counts them. If there are only 
+            /// 4 values, two of them must be the same. 
         /// </summary>
         /// <returns>true if has pair</returns>
         public bool HasPair()
         {
 
-            return this.Cards.GroupBy(x => x.Rank).Where(x => x.Count() == 2).Any();
+            return this.Cards.Select(x => x.Rank).Distinct().Count() == 4;
         }
 
         /// <summary>
