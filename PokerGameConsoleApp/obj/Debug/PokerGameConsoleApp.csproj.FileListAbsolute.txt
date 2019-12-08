@@ -4,3 +4,4 @@ C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\bin\Debug\
 C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\bin\Debug\PokerGameConsoleApp.pdb
 C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\obj\Debug\PokerGameConsoleApp.exe
 C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\obj\Debug\PokerGameConsoleApp.pdb
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\obj\Debug\PokerGameConsoleApp.csprojAssemblyReference.cache

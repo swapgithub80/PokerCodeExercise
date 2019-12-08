@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace PokerGameConsoleApp.Model
 {
-  public class Card
+    public class Card
     {
         public int Rank { get; set; }
         public string Suit { get; set; }
 
         public Card(string cardString)
         {
-           
+
             string tempRank = cardString[0].ToString();
             switch (tempRank)
             {
@@ -35,15 +35,12 @@ namespace PokerGameConsoleApp.Model
                     this.Rank = Convert.ToInt16(Ranks.Ace);
                     break;
                 default:
-                  
+
                     this.Rank = int.Parse(tempRank);
                     break;
             }
             this.Suit = cardString[1].ToString();
         }
-
-      
-
     }
 }
 

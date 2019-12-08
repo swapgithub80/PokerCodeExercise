@@ -17,19 +17,13 @@ namespace PokerGameConsoleApp
                 string playagain = "Y";
                 do
                 {
-                   
-                    Console.WriteLine("Enter the cards from the players' hands: \n");
-                    string hands = Console.ReadLine();
-                    CardDataValidations.EvaluatePokerHands(hands);
-                    string winner=PokerHands.LetsPlay(hands);
-                    Console.WriteLine(winner);
+                    LetsPlay();
                     Console.WriteLine("\nPlay Again / Quit Game ? (Y/N) ");
                     if (Console.ReadLine().ToUpper() == "N")
                     {
                         playagain = "N";
                         break;
                     }
-
 
                 } while (playagain != "N");
                 Console.WriteLine("Thank you for playing!");
@@ -43,21 +37,21 @@ namespace PokerGameConsoleApp
             }
         }
 
-        //private static void LetsPlay()
-        //{
-        //    try
-        //    {
-        //             Console.WriteLine("Enter the cards from the players' hands: \n");
-        //             string hands = Console.ReadLine();
-        //             string winner = CardDataValidations.EvaluatePokerHands(hands);
-        //             Console.WriteLine(winner);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex.Message);
-        //    }
+        private static void LetsPlay()
+        {
+            try
+            {
+                     Console.WriteLine("Enter the cards from the players' hands: \n");
+                     string hands = Console.ReadLine();
+                     string winner = CardDataValidations.EvaluatePokerHands(hands);
+                     Console.WriteLine(winner);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
-       // }
+        }
 
     }
 }
