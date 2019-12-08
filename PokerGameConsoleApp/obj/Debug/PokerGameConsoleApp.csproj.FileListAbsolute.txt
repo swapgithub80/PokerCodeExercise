@@ -1,0 +1,6 @@
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\obj\Debug\PokerGameConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\bin\Debug\PokerGameConsoleApp.exe.config
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\bin\Debug\PokerGameConsoleApp.exe
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\bin\Debug\PokerGameConsoleApp.pdb
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\obj\Debug\PokerGameConsoleApp.exe
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameConsoleApp\obj\Debug\PokerGameConsoleApp.pdb

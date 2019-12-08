@@ -1,0 +1,17 @@
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\PokerGameTests.dll
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\PokerGameTests.pdb
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\PokerGameConsoleApp.exe
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\PokerGameConsoleApp.pdb
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\PokerGameConsoleApp.exe.config
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\obj\Debug\PokerGameTests.csprojAssemblyReference.cache
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\obj\Debug\PokerGameTests.csproj.CoreCompileInputs.cache
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\obj\Debug\PokerGameTests.csproj.CopyComplete
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\obj\Debug\PokerGameTests.dll
+C:\Users\swapnav\source\repos\PokerGameConsoleApp\PokerGameTests\obj\Debug\PokerGameTests.pdb
