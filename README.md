@@ -43,11 +43,20 @@ or Download the exe from   https://github.com/swapgithub80/PokerCodeExercise/blo
 Tools Used :
 
 VS2017 and ASP.Net 4.7.1 framework have been used to implement PokerHand Code Exercise.
-Model: Card.
-Common : CardDataValidations, PokerConstants.
+
+Technical Approach :
+
 Enums are used for Suit, Ranks and HandTypes.
-Business logic created for game analysis of two hands.
+
 Console App created to process a game.
+
+PokerHands Class file :The Business logic created for game analysis of two hands.
+
+THe model class Card converts the SystemCards T,J,Q,K,A to integer values when adding it to the cardlist for each player.
+
+The constants class has error messages, playernames and the winners messages.
+
+The carddatavalidation class has all the validations written for the application.
 
 Unit Tests
 Unit tests are available in the PokerGameConsoleApp project,
@@ -69,7 +78,8 @@ The application first asks the user to enter the input. If the user does not inp
 
 If the input is valid the string is split for 2 players Left Hand and Right Hand.The application next analyses the Hands for each player and  gets the Hand Type for the player based on the rules of the game.Once the handtype is returned for both the players the application now compares the hand type and the player with the greater hand wins. If both the players have the same handtype then the player with the Highest rank cards wins. If none of the conditions are satisfied  then it is a draw.
 
-All the above mentioned scenarios  have been covered in the unit test cases.
+
+All the above mentioned scenarios  have been covered in the unit test cases. 
 
 
 
