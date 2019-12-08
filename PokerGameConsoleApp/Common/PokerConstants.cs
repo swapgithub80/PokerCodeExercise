@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace PokerGameConsoleApp.Common
 {
+    /// <summary>
+    /// Constants file to store errormessages, Player name and winning values. 
+    /// </summary>
     public class PokerConstants
     {
         #region Error Messages
@@ -15,7 +18,8 @@ namespace PokerGameConsoleApp.Common
         public const string InvalidInputDuplicatesMessage = "Duplicate pair of cards present in the input";
         public const string InvalidInputRanksMessage = "Invalid Input Ranks";
         #endregion
-        #region
+
+        #region Player
         public const string Player1 = "LeftHand";
         public const string Player2 = "RightHand";
         #endregion

@@ -5,9 +5,17 @@ using System.Linq;
 
 namespace PokerGameConsoleApp.Common
 {
+
+    /// <summary>
+    /// Evaluates the poker hand and checks for validations.
+    /// </summary>
   public  class CardDataValidations
     {
-        
+        /// <summary>
+        /// Checks if the input entered is a valid input.
+        /// </summary>
+        /// <param name="pokerHandsData"></param>
+        /// <returns>Analyse the game if true else throw error</returns>
         public static string EvaluatePokerHands(string pokerHandsData)
         {
             if (!CheckForPokerCardHandsDataIsValid(pokerHandsData))
@@ -18,9 +26,14 @@ namespace PokerGameConsoleApp.Common
             else
             {
 
-                return string.Empty;
+                return PokerHands.PlayerCards(pokerHandsData);
             }
         }
+        /// <summary>
+        /// CHecks for input for length, null,rank, suit
+        /// </summary>
+        /// <param name="pokerHandsData"></param>
+        /// <returns>true or false</returns>
             public static bool CheckForPokerCardHandsDataIsValid(string pokerHandsData)
         {
             if (string.IsNullOrEmpty(pokerHandsData))
@@ -41,6 +54,13 @@ namespace PokerGameConsoleApp.Common
             return true;
 
         }
+
+
+        /// <summary>
+        /// Checks if inout has duplicate cards.
+        /// </summary>
+        /// <param name="pokerHandsData"></param>
+        /// <returns>true or false</returns>
         private static bool CheckforPokerHandsCountAndDuplicateCards(string[] pokerHandsData)
         {
             if (pokerHandsData.Length != 10)
@@ -55,6 +75,11 @@ namespace PokerGameConsoleApp.Common
             return true;
         }
 
+        /// <summary>
+        /// Checks  input for valid rank.
+        /// </summary>
+        /// <param name="pokerHandsData"></param>
+        /// <returns>true or false</returns>
         private static bool CheckForPokerCardsRanksIsValid(string[] pokerHandsData)
         {
             bool isValidPokerCardsRank = pokerHandsData
@@ -66,6 +91,13 @@ namespace PokerGameConsoleApp.Common
             }
             return true;
         }
+
+
+        /// <summary>
+        /// Checks  input for valid suit.
+        /// </summary>
+        /// <param name="pokerHandsData"></param>
+        /// <returns>true or false</returns>
         private static bool CheckForPokerCardsSuitsIsValid(string[] pokerHandsData)
         {
             bool isValidPokerCardsSuit = pokerHandsData
@@ -79,6 +111,11 @@ namespace PokerGameConsoleApp.Common
             return true;
 
         }
+        /// <summary>
+        /// Check Card Is Present In Enum Based On EnumType. 
+        /// </summary>
+        /// <param name="pokerHandsData"></param>
+        /// <returns>true or false</returns>
         private static bool CheckCardIsPresentInEnumBasedOnEnumType(Type enumType, string valueToCheck)
         {
             if (enumType == null || string.IsNullOrEmpty(valueToCheck))
