@@ -18,22 +18,15 @@ The application will read the input of hands and determine the winner or draw by
 1.	Left Hand Wins
 2.	Right Hand Wins
 3.	Draw
-Acceptance Criteria
-1.	Determining the Winner
-Given:  Left and Right hands represented by System Cards as the input to the system
-Then:  The system should output the correct winner according to the Tie Breaker Rules table
 
-2.	Determining a draw
-Given:  Left and Right hands represented by System Cards as the input to the system
-When:  Both hands result in a draw
-Then:  The system should output “Draw”
-Calculates the winner in poker using a subset of poker rules
+Building the application :
 
-Building
 Load the file PokerGameConsoleApp.sln in Visual Studio, 
 and build the PokerGameConsoleApp​ project.
 
-Running
+
+Running the application :
+
 Run the PokerGameConsoleApp project, 
 and at the command line enter the 
 hands in the following format:
@@ -44,8 +37,7 @@ hands in the following format:
 7H 7D 7C 7S KD 2S 3S 4S 6S 5S : RightHand Wins.
 4H 8S 9C KD KH 2C 3H 4D 8C TD :LeftHand Wins.
 7H 7D 7C 7S KD 2D 3H 5C 9S 2H :LeftHand Wins.
-
-
+2H 4S 4C 2D KH 2C 3H 4S 8C KD : Draw.
 
 Tools Used :
 
@@ -69,4 +61,15 @@ Invalid Length,
 Duplicate Cards,
 Invalid Rank 
 and Invalid Suit
+
+Solution Approach :
+
+The application first asks the user to enter the input. If the user does not input and hits enter the application  validates it as an invalid input and asks if the user wants to play again. If the user says No it will end the game and if the user says Yes it will ask the user to input the cards. Once the user enters the input as given above it validates whether it has a valid length, valid Rank, valid Suit, and no duplicate cards.
+
+If the input is valid the string is split for 2 players Left Hand and Right Hand.The application next analyses the Hands for each player and  gets the Hand Type for the player based on the rules of the game.Once the handtype is returned for both the players the application now compares the hand type and the player with the greater hand wins. If both the players have the same handtype then the player with the Highest rank cards wins. If none of the conditions are satisfied  then it is a draw.
+
+All the above mentioned scenarios  have been covered in the unit test cases.
+
+
+
 
