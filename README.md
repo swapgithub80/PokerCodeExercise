@@ -44,19 +44,26 @@ Tools Used :
 
 VS2017 and ASP.Net 4.7.1 framework have been used to implement PokerHand Code Exercise.
 
-Technical Approach :
+Solution Approach :
 
 Enums are used for Suit, Ranks and HandTypes.
 
 Console App created to process a game.
 
-PokerHands Class file :The Business logic created for game analysis of two hands.
+PokerHands Class file :The Business logic created for game analysis of two hands. 
 
-THe model class Card converts the SystemCards T,J,Q,K,A to integer values when adding it to the cardlist for each player.
+The model class Card defines the properties and the constructor. It gets the rank from the string and also sets the suit. 
+It excutes the code based on the value of the string.
 
 The constants class has error messages, playernames and the winners messages.
 
 The carddatavalidation class has all the validations written for the application.
+Invalid Inputs,
+Invalid Length,
+Duplicate Cards,
+Invalid Rank 
+and Invalid Suit
+
 
 Unit Tests
 Unit tests are available in the PokerGameConsoleApp project,
@@ -72,7 +79,6 @@ Duplicate Cards,
 Invalid Rank 
 and Invalid Suit
 
-Solution Approach :
 
 The application first asks the user to enter the input. If the user does not input and hits enter the application  validates it as an invalid input and asks if the user wants to play again. If the user says No it will end the game and if the user says Yes it will ask the user to input the cards. Once the user enters the input as given above it validates whether it has a valid length, valid Rank, valid Suit, and no duplicate cards.
 
