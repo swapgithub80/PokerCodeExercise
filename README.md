@@ -24,7 +24,6 @@ Building the application :
 Load the file PokerGameConsoleApp.sln in Visual Studio, 
 and build the PokerGameConsoleApp​ project.
 
-
 Running the application :
 
 Run the PokerGameConsoleApp project, 
@@ -38,6 +37,8 @@ hands in the following format:
 4H 8S 9C KD KH 2C 3H 4D 8C TD :LeftHand Wins.
 7H 7D 7C 7S KD 2D 3H 5C 9S 2H :LeftHand Wins.
 2H 4S 4C 2D KH 2C 3H 4S 8C KD : Draw.
+
+or Download the exe from   https://github.com/swapgithub80/PokerCodeExercise/blob/master/PokerGameConsoleApp/Release/PokerGameConsoleApp.exe
 
 Tools Used :
 
