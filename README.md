@@ -37,7 +37,15 @@ Running
 Run the PokerGameConsoleApp project, 
 and at the command line enter the 
 hands in the following format:
-  
+2C 3H 4S 8C 9D 2H 3D 5S 9C AH : RightHand Wins.
+2S 4S 4C 2D 4H 2H 3D 5S AH 9C :LeftHand Wins.
+2S 3S 4S 6S 5S KS JS AS QS TS : RightHand Wins.
+2H 3D 5S AH 9C 2C 3S 4D 6H 5C : RightHand Wins.
+7H 7D 7C 7S KD 2S 3S 4S 6S 5S : RightHand Wins.
+4H 8S 9C KD KH 2C 3H 4D 8C TD :LeftHand Wins.
+7H 7D 7C 7S KD 2D 3H 5C 9S 2H :LeftHand Wins.
+
+
 
 Tools Used :
 
