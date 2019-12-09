@@ -42,7 +42,7 @@ namespace PokerGameConsoleApp
             try
             {
                      Console.WriteLine("Enter the cards from the players' hands: \n");
-                     string hands = Console.ReadLine();
+                     string hands = Console.ReadLine().ToUpper();
                      string winner = CardDataValidations.EvaluatePokerHands(hands);
                      Console.WriteLine(winner);
             }
